@@ -26,25 +26,25 @@ if __name__ == "__main__":
     data_utils.create_subset(
         source_dir=dataset_path,
         dest_dir=dataset_subset_path,
-        subset_size=16,
+        subset_size=800,
         shuffle=False,
     )
 
-    # Create augmentators
-    grayscale_augmentation = GrayScaleAugmentation(
-        source_dir=dataset_subset_path,
-        dest_dir=dataset_subset_augmented_path
-    )
-    basic_augmentation = BasicAugmentation(
-        source_dir=dataset_subset_path,
-        dest_dir=dataset_subset_augmented_path
-    )
-    augmentations = [basic_augmentation]
+    # # Create augmentators
+    # grayscale_augmentation = GrayScaleAugmentation(
+    #     source_dir=dataset_subset_path,
+    #     dest_dir=dataset_subset_augmented_path
+    # )
+    # basic_augmentation = BasicAugmentation(
+    #     source_dir=dataset_subset_path,
+    #     dest_dir=dataset_subset_augmented_path
+    # )
+    # augmentations = [basic_augmentation]
 
 
-    # Preview augmented images (optional)
-    # augmentations[0].visualize_dataset(5, augmented=True, randomize=False)
+    # # Preview augmented images (optional)
+    # # augmentations[0].visualize_dataset(5, augmented=True, randomize=False)
 
-    # Run augmentation
-    for augmentation in augmentations:
-        augmentation.run_augmentation(overwrite=True, visualize=False)
+    # # Run augmentation
+    # for augmentation in augmentations:
+    #     augmentation.run_augmentation(overwrite=True, visualize=False)

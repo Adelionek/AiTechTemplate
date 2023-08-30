@@ -488,6 +488,7 @@ MigrationBackup/
 
 *.jpg
 !ProjectFiles/Images/*.jpg
+!data/images/houzz_subset/*/*.jpg
 
 .idea
 ImageScrapper/ImageScrapper/Logs/

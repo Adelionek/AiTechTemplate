@@ -34,5 +34,5 @@ dataset:
   subset_size: False # If False, the whole dataset is used
   load_to_ram: True
 paths:
-  dataset: data/images/houzz_subset_augmented
+  dataset: data/images/houzz_subset
   dataset_augmented: data/images/houzz_augmented_dataset
