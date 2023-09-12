@@ -351,7 +351,7 @@ Conference Details:
 ### Contact Information
 
 - Adam Wojdyła - <adam.wojdyla@outlook.com>
-- Marcin Kostrzewski - TO BE UPDATED
+- Marcin Kostrzewski - <komar86311@gmail.com>
 - Michał Ulaniuk - TO BE UPDATED
 
 ## License
