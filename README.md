@@ -163,6 +163,11 @@ The repository contain sample Houzz dataset (800 images) which enables the proje
 
 You can add your own dataset and train the model on your custom data, just remember to follow the same structure as in the sample dataset.
 
+#### Download dataset
+
+- Full dataset (available after request): <https://doi.org/10.5281/zenodo.8327806>
+- Sample dataset (publicly available): TODO
+
 #### Images structure
 
 ```
@@ -233,8 +238,6 @@ Running the scripts should display the configuration used, load the data and beg
  ```
 
 When augmentation is set, the script will create a new folder specified in the `paths.dataset_augmented` config and create additional augmented images in this folder. When `dataset.subset_size` is provided, the new floder will have subset_size*2 images (raw images + augmented images).
-
-![img1](./ProjectFiles/Images/terminal_experiment.png)
 
 ### Inference Function
 
@@ -317,6 +320,8 @@ Its more than welcome to improve the performance of our model by community. One 
 
 #### Baseline results
 
+##### Full Dataset
+
 | Model              | Accuracy | Precision | Recall | F1-Score | Loss      |
 |--------------------|----------|-----------|--------|----------|-----------|
 | VGG16              | 0.4877   | 0.4857    | 0.4877 | 0.4863   | 1.4381    |
@@ -326,11 +331,21 @@ Its more than welcome to improve the performance of our model by community. One 
 Below are the test metrics from training VGG19 baseline model
 ![BaselineMetrics](./ProjectFiles/Images/baseline_metrics.jpg)
 
+##### Sample dataset (1600 images)
+
+| Model              | Accuracy | Precision | Recall | F1-Score | Loss      |
+|--------------------|----------|-----------|--------|----------|-----------|
+| VGG16              | 0.3687   | 0.3612    | 0.3687 | 0.3620   | 1.6986    |
+| VGG19              | 0.378    | 0.364     | 0.378  | 0.366    | 1.694     |
+| ResNet34           | TBA      | TBA       | TBA    | TBA      |           |
+
 ### Poster
 
 As part of the research and development project we prepared a Poster describing the trained model and research results. Poster can be found here: [Poster](./ProjectFiles/interio_PPRAI_Poster.pdf)
 
 ![Poster](./ProjectFiles/interio_PPRAI_Poster.png)
+
+*Note: The results in poster were achieved by training on full datraset with BasicAugmentation applied.*
 
 ### Awards and Recognition
 
