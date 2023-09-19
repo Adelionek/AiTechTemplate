@@ -326,7 +326,7 @@ Its more than welcome to improve the performance of our model by community. One 
 |--------------------|----------|-----------|--------|----------|-----------|
 | VGG16              | 0.4877   | 0.4857    | 0.4877 | 0.4863   | 1.4381    |
 | VGG19 (Baseline)   | 0.4877   | 0.4799    | 0.4877 | 0.4798   | 1.4217    |
-| ResNet34           | TBA      | TBA       | TBA    | TBA      |           |
+| ResNet34           | 0.350    | 0.337     | 0.350  | 0.338    | 1.784     |
 
 Below are the test metrics from training VGG19 baseline model
 ![BaselineMetrics](./ProjectFiles/Images/baseline_metrics.jpg)
@@ -337,7 +337,7 @@ Below are the test metrics from training VGG19 baseline model
 |--------------------|----------|-----------|--------|----------|-----------|
 | VGG16              | 0.3687   | 0.3612    | 0.3687 | 0.3620   | 1.6986    |
 | VGG19              | 0.378    | 0.364     | 0.378  | 0.366    | 1.694     |
-| ResNet34           | TBA      | TBA       | TBA    | TBA      |           |
+| ResNet34           | 0.163    | 0.157     | 0.163  | 0.155    | 2.116     |
 
 ### Poster
 
@@ -366,8 +366,8 @@ Conference Details:
 ### Contact Information
 
 - Adam Wojdyła - <adam.wojdyla@outlook.com>
-- Marcin Kostrzewski - TO BE UPDATED
-- Michał Ulaniuk - TO BE UPDATED
+- Marcin Kostrzewski - <komar86311@gmail.com>
+- Michał Ulaniuk - <michal.ulaniuk@gmail.com>
 
 ## License
 
