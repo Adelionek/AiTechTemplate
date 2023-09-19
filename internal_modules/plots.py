@@ -111,7 +111,7 @@ def show_misclassified(
             plt.subplot(
                 len(label_names.keys()), count_per_class, row * count_per_class + i + 1
             )
-            # plt.imshow(image["image"], interpolation="bicubic")
+            plt.imshow(image["image"], interpolation="bicubic")
             plt.title(f'{label_names[label]}, expected {label_names[image["actual"]]}')
             plt.axis("off")
 
