@@ -62,11 +62,11 @@ A simple example showing the use of a trained ML model for interior style predic
 
 ## Setup
 
-Here are the inslation instructions for the research part of the project (data preparation, model training and evaluation). There are two other sub-projects related to image scrapping and function for inference.
+Here are the setup instructions for the research part of the project (data preparation, model training and evaluation). There are two other sub-projects related to image scrapping and function for inference.
 
 Each project contains own instructions:
 
-- ImageScrapper [README](./ImageScrapper/README.md)
+- ImageScrapper [README](./ImageScrapper/ImageScrapper/README.md)
 - InferenceFunctionApp [README](./InferenceFunctionApp/README.md)
 
 ### Prerequisites
@@ -116,7 +116,7 @@ Before starting the project, ensure that the configuration values are set proper
 - `model` - The model architecture used in experiment. Supported values are: vgg16, vgg19, resnet34, vitb16.
 - `optimizer` - The optimize function used in experiment. Supported values are: sgd, adam.
 
-New models and oprimizers can be added by creating appropriate .yaml file and updating the [model_utlis.py](./internal_modules/utils/model_utlis.py) file.
+New models and optimizers can be added by creating appropriate .yaml file and updating the [model_utlis.py](./internal_modules/utils/model_utlis.py) file.
 
 **hydra Section** - Specifies the configuration for the Hydra framework, which is used to manage the configuration parameters. Bascically, the current configuration prevents from creating new directories and files by the package.
 
@@ -151,7 +151,7 @@ New models and oprimizers can be added by creating appropriate .yaml file and up
 
 ### Dataset
 
-Raw image files are not kept in the repository. The raw data should be placed in the `images/raw` directory, and then the config `paths.dataset` should be updated. When running the experiment, the script in the `loaders.py` file will perform a transofmation of the images and also split the dataset into a test and validation set.
+Raw image files are not kept in the repository, they should be downloaded from the sources described below. After downloading, the raw data should be placed in the `data/images` directory, and then the config `paths.dataset` should be updated to point to appropriate folder. When running the experiment, the script in the `loaders.py` file will perform a transofmation of the images and also split the dataset into a test and validation set.
 
 Currently there are 3 sources of data supported:
 
@@ -159,18 +159,19 @@ Currently there are 3 sources of data supported:
 - Pinterest (auto labeled)
 - Olx (manualy labeled)
 
-The repository contain sample Houzz dataset (800 images) which enables the project to be launched and tested. In order to fully reproduce the results, the owners of the repository must be contacted to provide the full dataset. In the case of Houzz dataset, this is approximately 11000 images (1.5GB of data).
+The repository contain a link to sample Houzz dataset (1600 images) which enables the project to be launched and tested. In order to fully reproduce the results, the owners of the repository must be contacted to provide the full dataset. In the case of Houzz dataset, this is approximately 11000 images (1.5GB of data). The Olx and Pinterest datasets are not uploaded to internet, please contact us if you would like to use this datasets.
 
-You can add your own dataset and train the model on your custom data, just remember to follow the same structure as in the sample dataset.
+You can add your own dataset and train the model on your custom data, just remember to follow the same images structure.
 
 #### Download dataset
 
-- Full dataset (available after request): <https://doi.org/10.5281/zenodo.8327806>
-- Sample dataset (publicly available): TODO
+- Full dataset (available after request): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8327806.svg)](https://doi.org/10.5281/zenodo.8327806)
+
+- Sample dataset (publicly available): [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8360665.svg)](https://doi.org/10.5281/zenodo.8360665)
 
 #### Images structure
 
-```
+```text
 AITech-flats
 │   README.md
 └───images
@@ -304,10 +305,6 @@ python ./experiments/python_scripts/run_experiment.py model=vgg16 optimizer=sgd 
 The experiment should be logged in AzureML workspace.
 ![azure workspace](ProjectFiles/Images/azureml.jpg)
 
-### Frontend Web Application
-
-TODO
-
 ## Research Project
 
 ### Results
@@ -365,7 +362,8 @@ Conference Details:
 
 ### Contact Information
 
-- Adam Wojdyła - <adam.wojdyla@outlook.com>
+- Adam Wojdyła - <adam.wojdyla@outlook.com> [![Linkedin](https://i.stack.imgur.com/gVE0j.png)](https://www.linkedin.com/in/adamwojdyla/)
+
 - Marcin Kostrzewski - <komar86311@gmail.com>
 - Michał Ulaniuk - <michal.ulaniuk@gmail.com>
 
