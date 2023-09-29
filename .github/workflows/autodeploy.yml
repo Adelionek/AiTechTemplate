@@ -1,9 +1,10 @@
 name: Deploy FE app to Azure App Services
 
-on:
-  push:
-    branches: [ 'main' ]
-    paths: [ 'frontend/**' ]
+on: workflow_dispatch
+  # push:
+  #   branches: [ 'main' ]
+  #   paths: [ 'frontend/**' ]
+  
 
 jobs:
   deploy:
