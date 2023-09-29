@@ -1,6 +1,6 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: AITech MSc project - 'Classification of Interior Architectural Styles using Deep Learning'
-Upstream-Contact: Adam Wojdyła <adam.wojdyla@outlook.com>
+Upstream-Contact: Adam Wojdyła <adam.wojdyla@outlook.com> Marcin Kostrzewski <komar86311@gmail.com> Michał Ulaniuk - <michal.ulaniuk@gmail.com>
 Source: <https://github.com/uamwmi/AITech-flats>
 
 Files: ProjectFiles/* data/images/*  data/augmentation/*

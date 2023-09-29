@@ -321,9 +321,10 @@ Its more than welcome to improve the performance of our model by community. One 
 
 | Model              | Accuracy | Precision | Recall | F1-Score | Loss      |
 |--------------------|----------|-----------|--------|----------|-----------|
-| VGG16              | 0.4877   | 0.4857    | 0.4877 | 0.4863   | 1.4381    |
-| VGG19 (Baseline)   | 0.4877   | 0.4799    | 0.4877 | 0.4798   | 1.4217    |
+| VGG16              | 0.482    | 0.472     | 0.482  | 0.475    | 1.448     |
+| VGG19 (Baseline)   | 0.493    | 0.487     | 0.493  | 0.488    | 1.211     |
 | ResNet34           | 0.350    | 0.337     | 0.350  | 0.338    | 1.784     |
+| ViT-B16            | 0.362    | 0.343     | 0.362  | 0.341    | 1.803     |
 
 Below are the test metrics from training VGG19 baseline model
 ![BaselineMetrics](./ProjectFiles/Images/baseline_metrics.jpg)
@@ -335,6 +336,7 @@ Below are the test metrics from training VGG19 baseline model
 | VGG16              | 0.3687   | 0.3612    | 0.3687 | 0.3620   | 1.6986    |
 | VGG19              | 0.378    | 0.364     | 0.378  | 0.366    | 1.694     |
 | ResNet34           | 0.163    | 0.157     | 0.163  | 0.155    | 2.116     |
+| ViT-B16            | 0.197    | 0.177     | 0.197  | 0.181    | 2.056     |
 
 ### Poster
 
@@ -370,3 +372,8 @@ Conference Details:
 ## License
 
 Each file has a description with license. All licenses used in the project are located in `LICENSES` folder.
+
+TODO:
+* add sample models?
+* add sample models for inference function?
+* 
