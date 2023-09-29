@@ -493,7 +493,9 @@ data/images/*
 .idea
 ImageScrapper/ImageScrapper/Logs/
 
-experiments/models/
+experiments/models/**/*.*
+# !experiments/models/VGG19-TransferLearning/vgg19_baseline_model.pt
+
 .vscode
 mlruns/
 
