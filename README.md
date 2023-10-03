@@ -372,8 +372,3 @@ Conference Details:
 ## License
 
 Each file has a description with license. All licenses used in the project are located in `LICENSES` folder.
-
-TODO:
-* add sample models?
-* add sample models for inference function?
-* 
