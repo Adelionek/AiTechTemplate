@@ -15,6 +15,7 @@ AITech MSc project - 'Classification of Interior Architectural Styles using Deep
 - [AITech-flats](#aitech-flats)
   - [Project Description](#project-description)
   - [Demo](#demo)
+    - [Architecture](#architecture)
     - [Web app with integrated ML model for image style prediction](#web-app-with-integrated-ml-model-for-image-style-prediction)
     - [Raw model predictions on sample image](#raw-model-predictions-on-sample-image)
   - [Setup](#setup)
@@ -47,6 +48,10 @@ AITech MSc project - 'Classification of Interior Architectural Styles using Deep
   - [License](#license)
 
 ## Demo
+
+### Architecture
+
+![Architecture](./ProjectFiles/Images/high-level-architecture.png)
 
 ### Web app with integrated ML model for image style prediction
 
