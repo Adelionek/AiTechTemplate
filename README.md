@@ -353,7 +353,7 @@ As part of the research and development project we prepared a Poster describing 
 
 ### Awards and Recognition
 
-Our project's poster was accepted at the Polish Conference on Artificial Intelligence (PP-RAI). The conference provides a platform for researchers and practitioners to exchange ideas and advancements in the field of AI. We are excited that our team had a chance to present the research results to broader public. [Read more](<https://pp-rai.pl/programme/cv-poster-session-papers/>)
+Our project's poster was accepted at the Polish Conference on Artificial Intelligence (PP-RAI). The conference provides a platform for researchers and practitioners to exchange ideas and advancements in the field of AI. We are excited that our team had a chance to present the research results to broader public. [Read more](<https://web.archive.org/web/20230609121754/https://pp-rai.pl/programme/cv-poster-session-papers//>)
 
 Conference Details:
 
